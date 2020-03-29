@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natasha's Portfolio</title>
+  <link rel="shortcut icon" href="../HomePage_Images/nLogo.png">
+  <link rel="stylesheet" href="mainPagePortfolio_style.css">
+</head>
+
+<body>
+  <!--Letterhand Heading-->
+  <div class="topHeader">
+    <img src="../HomePage_Images/nLogo.png" alt=""/>
+
+  <!--Side Bar Icon-->
+  </div>
+  <span style="position: fixed;font-family:Arial, Helvetica, sans-serif; font-size: 30px;margin-left: 30px; color:lightgray" onclick="openNav()">&#9776; </span>
+
+  <!--Header-->
+  <header id="mainHeader">
+    <div class="container">
+    </div>
+  </header>
+
+  <!--Collapsable Side Nav Bar-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="designsPage.html">Designs</a>
+    <a href="developPage.html">Developments</a>
+    <a href="#">Involvements</a>
+    <a href="#">About</a>
+  </div>
+
+  <!--Jumbo: Animated Introductory Title and Fade In Sub Title-->
+  <section id="jumbo"> 
+    <div class="container">
+      <p class="line-1 anim-typewriter"><strong>Hello There! My name is Natasha Ahammed :)</strong></p>
+    </div>
+  </section>
+  <h1 class="fade-in">I like to design, tinker, and create new things.</h1>
+
+  <!--1st Section: Latest-->
+  <h1 class="mHeader-1"><strong>Latest.</strong></h1>
+  <div class="grid-container">
+    <div class="grid-item latest-1">
+      <strong><p id="projectTitle">Pocket Plan</p></strong>
+      <p id="subText">Using the skills I developed from my Co-op with Apple, I built my own personal planner iOS app.</p>
+      <!--<img src="../HomePage_Images/pythonIcon.png" alt=""/>
+      <p>Pokemon game created using python and with starter GUI application to learn how to use tkinter in conjunction with the MVC application cycle.-->
+      <button class="buttonOne">Read More</button>
+    </div>
+
+    <div class="grid-item latest-2">
+      <p id="projectTitleTwo">Freelance Graphic Design</p>
+      <img src="../HomePage_Images/weddingInvitation2.png" alt="Wedding Invitation"/>
+      <p id="description">Freelancing graphic design for wedding, creating wedding invitation package.</p>
+      <button class="buttonTwo">Read More</button>
+    </div>
+
+    <div class="grid-item latest-3">
+      <img src="../HomePage_Images/pythonIcon.png" alt=""/>
+      <p>Pokemon game created using python and with starter GUI application to learn how to use tkinter in conjunction with the MVC application cycle.</p>
+      <button class="buttonTwo">Read More</button>
+    </div>
+    
+    <div class="latest-4">
+      Read All Projects
+    </div>
+  </div>
+
+<!--2nd Section: About-->
+<strong><h1 class="mHeader-3"><strong>About me.</strong></h1></strong>
+  <div class="grid-container3">
+    <div class="aboutme-grid-item aboutText">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ipsam molestiae odit nisi totam dolores asperiores reiciendis unde iste. Quis facilis quae illum eos ut repellendus mollitia, atque inventore tempore voluptate adipisci, unde, neque sequi molestiae nisi laborum autem eveniet blanditiis ab? Magnam eaque nesciunt commodi! Aperiam repellendus ipsa velit.</p>
+    </div>
+    <div class="aboutme-grid-item fieldProtraitImage"></div>
+  </div>
+
+
+  <!--3rd Section: Contact-->
+  <strong><h1 class="mHeader-2"><strong>Let's chat.</strong></h1></strong>
+  <div class="grid-container2">
+    <div class="contact-grid-item contact-1">
+      <p>Let's get in touch!
+        Hi! I'm someone who likes to work creatively, and logically, putting the two worlds into meaningful projects to the front-eye and deep within.
+      </p>
+    </div>
+    <div class="contact-grid-item contactImage"></div>
+  </div>
+</body>
+</html>
