@@ -236,13 +236,15 @@ body {
   display: grid;
   width: 80%; /*Makes 80% width of screen*/
   margin: auto; /*takes left over % (20) and centers left and right*/
-  height: 2250px;
+  height: 3600px;
   padding-top: 30px;
   margin-bottom: 50px;
   grid-template:
-  "projectOne projectOne" 1fr
-  "projectTwo projectThree" 1fr
-  "projectFour projectFour" 1fr
+  "projectOne projectOne" 750px
+  "projectFour projectFour" 1400px
+  "projectTwo projectTwo" 1050px
+
+   / 1fr
 }
 
 .grid-item {
@@ -292,6 +294,7 @@ body {
   
 .latest-2 {
   background-color: #CFE4FF;
+  grid-area: projectTwo;
   justify-items: center; /*align items is what allows elements within grid cell to align*/
   align-items: center;
   display: grid;
@@ -302,6 +305,7 @@ body {
   font-family: "Nunito", Helvetica, sans-serif;
   padding-left: 3%; 
   padding-top: 15%; 
+  background-image: url("../HomePage_Images/bakeryFlatlayV1.png");
   grid-template: 
     "projectTitle" 20%
     "iconImage" 30%
@@ -440,7 +444,7 @@ body {
 .latest-4 {
   grid-area: projectFour;
   background-color: #FFD9CF;
-  background-image: url("../HomePage_Images/flatlayV2.png");
+  background-image: url("../HomePage_Images/ppFlatlayV1.png");
   background-size: cover;
   justify-items: center; /*align items is what allows elements within grid cell to align*/
   display: grid;
