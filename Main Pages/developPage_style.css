@@ -1,6 +1,8 @@
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 @import url(https://fonts.googleapis.com/css?family=Inter);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 
 /* Global */
 html{
@@ -11,8 +13,11 @@ html{
 
 #pageHeader {
   text-align: center;
-  font-size: 60px;
+  font-size: 80px;
   font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  line-height: 0.4em;
+
 }
 
 .topHeader {
@@ -21,7 +26,7 @@ html{
   text-align: center;
   padding-top: 10px;
   padding-left: 30px;
-
+  margin-bottom: 40px;
 }
 
 .topHeader img {
@@ -32,7 +37,7 @@ html{
 body {
   font-family: "Anonymous Pro", Helvetica, Arial, sans-serif;
   font-size: 21px;
-  line-height: 1.6em; /*line space between each line*/
+  line-height: 1em; /*line space between each line*/
   /*(1em is 16px, 0.5em is 8 px)*/
   margin: 0; /*changes from default margin to have no margin*/
   height: 900px;
@@ -208,7 +213,7 @@ body {
   margin-left: 10%;
   margin-bottom: 20%;
   font-size: 24px;
-  color: blue;
+  color: #89B4FF;
 }
 
 @keyframes fadeInOpacity {
@@ -229,175 +234,387 @@ body {
 }
 
 
-/******LATEST Grid Container******/
-.designs-grid-container {
+/******CODING Grid Container******/
+.grid-container {
   display: grid;
   width: 80%; /*Makes 80% width of screen*/
   margin: auto; /*takes left over % (20) and centers left and right*/
-  height: 1500px;
+  height: 1850px;
   padding-top: 30px;
-  /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
-  /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
-  margin-bottom: 50px;
   grid-template:
-  "projectOne projectOne" 1fr
-  "projectTwo projectThree" 1fr
-  "projectFour projectFour" 1fr
-  / 1fr 1fr  /*columns respective to above rows, with their row attributes*/
+  "projectOne projectOne" 560px
+  "projectTwo projectThree" 569px
+  "projectFour projectFour" 550px
+   / 1fr 1fr
 }
 
 .grid-item {
   display: grid;
   font-family: "Inter", Arial, sans-serif;
-  background-color: #ffcccc;
-  justify-items: center; /*align items is what allows elements within grid cell to align*/
-  align-items: center;
-  align-items: center;
-  padding: 40px;
-  grid-template: 
-  "iconImage" 50%
-  "textBox" 50%
-  / 1fr
-
   }
 
-.design-1 {
+.coding-1 {
   display: grid;
   grid-area: projectOne;
-  background-color: #fce4dc;
-
-}
-
-.design-1 img {
-  grid-area: iconImage;  
-  height: 140px;
-  width: 140px;
-  align-self: center;
-}
-
-.design-1 p {
-  grid-area: textBox;
-  text-align: center;
-  margin-top: 2px;
-  color: white;
-  align-self: start;
-
-}
-
-.design-2 {
-  grid-area: projectTwo;
-  background-color: #9dc4c9;
-}
-
-.design-2 img {
-  grid-area: iconImage;  
-  height: 150px;
-  width:150px;
-  align-self: center;
-}
-.design-2 p {
-    grid-area: textBox;
-    text-align: center;
-    margin-top: 2px;
-    color: white;
-    align-self: start;
-}
-
-.design-3 {
-  grid-area: projectThree;
-  background-color: lightblue;
-  color: white;
-  text-align: center;
-}
-
-.design-4 {
-  grid-area: projectFour;
-  background-color: lavender;
-}
-
-
-/*
-.latest-3 img {
-  grid-area: iconImage;  
-  height: 150px;
-  width:150px;
-  align-self: center;
-
-}
-
-.latest-3 p {
-  grid-area: textBox;
-  text-align: center;
-  margin-top: 2px;
-  color: white;
-  align-self: start;
-}
-*/
-
-.design-4 {
+  background-image: url("../BuildsPage/appsFlatlayR3.png");
+  background-size: cover;
   font-size: 50px;
-  text-align: center;
   color: white;
-  
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+
 }
 
-/******ABOUT ME Grid Container******/
-.grid-container3 {
+.coding-1 img {
+  width:30px;
+  height:30px;
+  margin-top: 30px;
   position: relative;
+  margin-right: 2px;
+  font-size: 50px;
+  color: white;
+  transform: translate(20px, 480px);
+}
+
+.emptyBig {
+  grid-area: empty;
+}
+
+#projectTitle {
+  grid-area: projectTitle1;
+}
+
+#subText {
+  margin-top: 30px;
+  grid-area: subText;
+  position: grid;
+  font-size: 15px;
+  color: white;
+  font-family: "Inter", Helvetica, sans-serif;
+  line-height: 20px;
+
+}
+
+.coding-2 {
+  background-color:white;
+  grid-area: projectTwo;
+  background-size: cover;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  display: grid;
+  font-size: 20px;
+  text-align: start;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", Helvetica, sans-serif;
+}
+
+.coding-3 {
+  background-color:white;
+  grid-area: projectThree;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  align-items: center;
+  display: grid;
+  background-size: cover;
+  font-family: "Nunito", Helvetica, sans-serif;
+}
+
+.coding-4 {
+  grid-area: projectFour;
+  background-size: cover;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  display: grid;
+  font-size: 20px;
+  text-align: start;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", Helvetica, sans-serif;
+  background-image: url("../BuildsPage/pyJava-V2.png");
+  
+  grid-template: 
+    "python java" 1fr
+      / 1fr 1fr 
+}
+
+.python {
+  grid-area: python;
+  border: 2px solid red;
+  margin: 30px;
+  height: 90%;
+  align-items: center;
+}
+.text-python {
+  align-self: end;
+}
+.button-python {
+  margin-top: 65%;
+  width: 150px;
+  height: 50px;
+  align-self: end;
+  justify-self: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.coding-4 {
+  grid-area: projectFour;
+  background-size: cover;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  display: grid;
+  font-size: 20px;
+  text-align: start;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", Helvetica, sans-serif;
+  grid-template: 
+    "python java" 1fr
+      / 1fr 1fr 
+}
+
+.java {
+  grid-area: java;
+  border: 2px solid green;
+  margin: 10px;
+  text-align: center;
+  align-self: start;
+  height: 90%;
+}
+
+.java p {
+  font-size: 66px;
+  line-height: 55px;
+  margin-top: 10%;
+
+}
+.button-java {
+  margin-bottom: 90px;
+  width: 150px;
+  height: 55px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-size: 15px;
+}
+
+.buttonCoding {
+  background-color: #a18deb;
+  border: none;
+  color: white;
+  opacity: 0.7;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+  width: 100px;
+  height: 30px;
+}
+
+.buttonCoding:hover {
+  opacity: 1
+}
+
+
+/******MAKES Grid Container******/
+.grid-container-2 {
   display: grid;
   width: 80%; /*Makes 80% width of screen*/
   margin: auto; /*takes left over % (20) and centers left and right*/
-  height: 600px;
+  height: 3500px;
   padding-top: 30px;
-  margin-bottom: 250px;
-  justify-items: stretch;
-  align-items: stretch;
+  margin-bottom: 50px;
+  grid-template:
+  "projectOne projectOne" 1250px
+  "projectTwo projectTwo" 370px
+  "projectThree projectFour" 500px
+  "projectFive projectFive" 1350px
+   / 40% 60%
 }
 
-.aboutme-grid-item {
+.grid-item-makes {
   display: grid;
   font-family: "Inter", Arial, sans-serif;
-  padding: 40px;
   }
 
-  .aboutme-1 {
-    grid-column: 1 / 2;
-    display: grid;
-    background-color: lavender;
+.makes-1 {
+  display: grid;
+  grid-area: projectOne;
+  background-image: url("../BuildsPage/projectsOneFlatlay-V2.png");
+  background-size: cover;
+  font-size: 30px;
+  text-align: start;
+  color: black;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  justify-content: center;
+  align-content: center;
+  grid-template: 
+  "column1 column2" 1fr
+  / 40% 60%
+}
 
-  }
-  
-  
-  .mHeader-3 {
-    font-family: "Inter", Helvetica, sans-serif;
-    margin-left: 10%;
-    transform: translate(20px, 120px);
-    font-size: 130px;
-    z-index:1;
+.column1 {
+  grid-area: column1;
+  border: 4px solid red;
+  grid-template:
+  "row1" 1fr
+  "row2" 1fr
+  "row3" 1fr
+  / 1fr
+}
 
-  }
-  
-  .aboutText {
-    text-align: start;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    padding-top: 60px;
-    color: white;
-  
-  }
-  
-  .fieldProtraitImage {
-    background-color:lightyellow;
-    background-image: url("../MainPage_Images/fieldPortrait.png");
-    background-size: cover;
-    z-index:-1;
-    /*opacity: 0.9;*/
+/*Row 1*/
+.row1 {
+  grid-area: row1;
+  border: 4px solid yellow;
+}
+/*Row 2*/
+.row2 {
+  padding-top: 10%;
+  grid-area: row2;
+  border: 4px solid green;
+}
+.row2 .header1 {
+  font-size: 37px;
+}
+.row2 .subText1 {
+  padding: 2%;
+  padding-top: 20px;
+  font-size: 15px;
+}
+/*Row 3*/
+.row3 {
+  grid-area: row3;
+  border: 4px solid blue;
+  margin-right: 40%;
+}
+.row3 .header2 {
+  padding-top: 7%;
+  grid-area: row3;
+}
+.row3 .subText2 {
+  padding: 2%;
+  padding-top: 20px;
+  font-size: 15px;
+}
 
-  }
+.column2 {
+  grid-area: column2;
+  border: 4px solid blue;
+}
+
+
+.makes-2 {
+  grid-area: projectTwo;
+  background-image: url("../BuildsPage/projectsTwoFlatlay-V2.png");
+  background-size: cover;
+  display: grid;
+  font-size: 20px;
+  color: black;
+  font-family: "Nunito", Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.viewProjectButton {
+    transform: translate(0px, 310px);
+    font-size: 10px;
+  
+}
+
+.makes-3 {
+  grid-area: projectThree;
+  background-size: cover;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  display: grid;
+  font-size: 20px;
+  text-align: start;
+  align-items: center;
+  color: black;
+  font-family: "Nunito", Helvetica, sans-serif;
+  background-image: url("../BuildsPage/bike.jpg");
+  margin: 20px;
+  background-color: lightyellow;
+
+
+}
+
+.makes-4 {
+  grid-area: projectFour;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  align-items: center;
+  display: grid;
+  background-size: cover;
+  font-family: "Nunito", Helvetica, sans-serif;
+}
+
+.makes-5 {
+  display: grid;
+  grid-area: projectFive;
+  background-image: url("../BuildsPage/projectsThreeFlatlay-V3.png");
+  background-size: cover;
+  line-height: 22px;
+  font-size: 20px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  border: 3px solid red;
+  grid-template: 
+  "column1 column2" 1fr
+  / 1fr 1fr
+}
+
+.makeColumn-1 {
+  grid-area: column1;
+  border: 3px solid green;
+  grid-template:
+    "make-row1" 30%
+    "make-row2" 15%
+    "make-row3" 25%
+    "make-row4" 30%
+    / 1fr 
+}
+
+.make-row1 {
+  grid-area: make-row1;
+  border: 2px solid green;
+}
+.make-row2 {
+  grid-area: make-row2;
+  border: 2px solid yellow;
+  align-self: end;
+  padding-bottom: 2%;
+
+}
+.make-row3 {
+  grid-area: make-row3;
+  border: 2px solid blue;
+  padding-top: 2%;
+
+
+}
+ .make-row4 {
+  grid-area: make-row4;
+  border: 2px solid red;
+
+}
+
+.makeColumn-2 {
+  grid-area: column2;
+  border: 3px solid blue;
+  grid-template:
+  "make-row5" 25.5%
+  "make-row6" 17%
+  / 1fr 
+}
+.make-row5 {
+  grid-area: make-row5;
+  : 2px solid green;
+}
+.make-row6 {
+  grid-area: make-row6;
+
+}
+.make-row7 {
+  grid-area: make-row7;
+}
+
 
 /******CONTACT BOX Grid Container******/
-.grid-container2 {
+.grid-container-contact {
   display: grid;
   width: 80%; /*Makes 80% width of screen*/
   margin: auto; /*takes left over % (20) and centers left and right*/
@@ -407,7 +624,6 @@ body {
   /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
   /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
   grid-template-columns: repeat(2, 1fr);
-
   justify-items: stretch;
   align-items: stretch;
 
@@ -416,16 +632,14 @@ body {
 .contact-grid-item {
   display: grid;
   font-family: "Inter", Arial, sans-serif;
-  background-color: #ffcccc;
   padding: 40px;
   }
 
 .contact-1 {
   grid-column: 1 / 2;
   display: grid;
-  background-color: lavender;
+  background-color: #afcefa;
 }
-
 
 .mHeader-2 {
   font-family: "Inter", Helvetica, sans-serif;
@@ -437,30 +651,526 @@ body {
 .contact-1 p {
   text-align: start;
   color: white;
+}
 
-
+.contact-2 img {
+  width:40px;
+  height: 40px;
+  align-self: end;
+  padding: 0px;
+  margin: 0px;
+  transform: translate(-40px, 205px);
 }
 
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../MainPage_Images/portrait.png");
+  background-image: url("../HomePage_Images/face3.png");
   background-size: cover;
+}
+
+/*FULL SCREEN*/
+@media (max-width: 1600px) {
+  .coding-5 .button-python2 {
+    display: none;
+  }
+  .coding-5 .text-python2 {
+    display: none;
+  }
+  .coding-5 p {
+    display: none;
+  }
+  
+  .coding-6 .button-java2 {
+    display: none;
+  }
+  
+  .coding-6 .text-java2 {
+    display: none;
+  }
+  .coding-6 p {
+    display: none;
+  }
+  
+}
+
+/****** 1200px - media queries******/
+@media (max-width: 1200px) {
+  .grid-container {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 2000px;
+  }
+
+  .grid-container-2 {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 2850px;
+  }
+
+  /*Coding-1*/
+  .coding-1 {
+    height: 500px;
+    width: 100%;
+  }
+  .coding-1 img {
+    transform: translate(20px, 420px);
+  }
+
+  /*Coding-2*/
+  .coding-2 iframe {
+    width: 100%;
+  }
+
+  /*Coding-3*/
+  .coding-3 iframe {
+    width: 100%;
+  }
+
+  /*Coding-4*/
+  .coding-4 {
+    width: 100%;
+    height: 440px;
+  }
+
+  /*Coding-4 Text*/
+  .python {
+    grid-area: python;
+    margin: 50px;
+    height: 70%;
+  }
+  .text-python {
+    align-self: center;
+    font-size: 12px;
+  }
+
+  .button-python {
+    width: 120px;
+    height: 40px;
+  }
+  
+  .java {
+    grid-area: java;
+    text-align: center;
+    font-size: 15px;
+  }
+  .java p {
+    margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  /*Make-1*/
+  .makes-1 {
+    width: 97%;
+    height: 900px;
+    grid-template: 
+    "column1 column2" 1fr
+    / 30% 70%
+  }
+
+/*Row 1*/
+.row1 {
+  grid-area: row1;
+}
+/*Row 2*/
+.row2 {
+  padding-top: 10%;
+  grid-area: row2;
+}
+.row2 .header1 {
+  padding-top: 20%;
+  font-size: 30px;
+}
+.row2 .subText1 {
+  padding-top: 20px;
+  font-size: 12px;
+  margin-right: 20%;
+}
+/*Row 3*/
+.row3 {
+  grid-area: row3;
+  margin-right: 40%;
+}
+.row3 .header2 {
+  padding-top: 7%;
+  grid-area: row3;
+}
+.row3 .subText2 {
+  padding: 2%;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+
+   /*Make-2*/
+   .makes-2 {
+    width: 96%;
+    height: 270px;
+    margin-top: 40px;
+  }
+  .viewProjectButton {
+    transform: translate(0px, 240px);
+    font-size: 10px;
+  
+}
+
+   /*Make-3*/
+   .makes-3 {
+    display: none;
+  }
+
+   /*Make-4*/
+   .makes-4 iframe {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+  }
+
+   /*Make-5*/
+   .makes-5 {
+    width: 97%;
+    height: 1100px;
+    margin: auto;
+  }
+  
+
+  .make-row2 {
+    grid-area: make-row2;
+    align-self: end;
+    padding-bottom: 2%;
+    font-size: 12px;
+    line-height: 15px;
+  
+  }
+  .make-row3 {
+    grid-area: make-row3;
+    padding-top: 2%;
+    font-size: 12px;
+    line-height: 15px;
+  
+  
+  }
+   .make-row4 {
+    grid-area: make-row4;
+  
+  }
+  
+  .make-row5 {
+    grid-area: make-row5;
+  }
+  .make-row6 {
+    grid-area: make-row6;
+    font-size: 11px;
+    line-height: 13px;
+  
+  }
+  .make-row7 {
+    grid-area: make-row7;
+  }
+}
+
+/****** 1000px - media queries******/
+@media (max-width: 1000px) {
+  .grid-container {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 1900px;
+  }
+
+  .grid-container-2 {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 2550px;
+  }
+
+    /*Make-1*/
+    .makes-1 {
+      width: 100%;
+      height: 770px;
+      grid-template: 
+      "column1 column2" 1fr
+      / 30% 70%
+    }
+  
+  /*Row 2*/
+  .row2 {
+    padding-top: 10%;
+    grid-area: row2;
+  }
+  .row2 .header1 {
+    padding-top: 5%;
+    font-size: 30px;
+  }
+  .row2 .subText1 {
+    font-size: 12px;
+    margin-right: 20%;
+    line-height: 14px;
+  }
+  /*Row 3*/
+  .row3 {
+    grid-area: row3;
+    margin-right: 40%;
+  }
+  .row3 .header2 {
+    padding-top: 7%;
+    grid-area: row3;
+  }
+  .row3 .subText2 {
+    padding: 2%;
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+
+    /*Make-2*/
+    .makes-2 {
+      width: 94%;
+      height: 205px;
+    }
+    .viewProjectButton {
+      transform: translate(0px, 140px);
+      font-size: 10px;
+    }
+    
+
+    /*Make-5*/
+    .makes-5 {
+      width: 97%;
+      height: 950px;
+      margin: auto;
+  
+    }
+
+
+  .coding-1 {
+    height: 400px;
+  }
+  .coding-1 img {
+    transform: translate(20px, 320px);
+  }
+  .coding-4 {
+    width: 100%;
+    height: 400px;
+
+  }
+   /*Coding-4 Text*/
+   .python {
+    grid-area: python;
+    margin: 30px;
+    height: 80%;
+  }
+  .text-python {
+    align-self: end;
+    font-size: 12px;
+    text-align: center;
+  }
+  .button-python {
+    width: 120px;
+    height: 40px;
+  }
+  
+  .java {
+    grid-area: java;
+    margin: 10px;
+    align-items: start;
+    text-align: center;
+    font-size: 12px;
+    width: 80%;
+  }
+  .java p {
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .button-java {
+    margin-bottom: 20px;
+
+  }
+
+  .text-java {
+    align-self: start;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+}
+/****** 800px - media queries******/
+@media (max-width: 800px) {
+  .grid-container-2 {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 2000px;
+  }
+
+   /*Make-1*/
+   .makes-1 {
+    width: 100%;
+    height: 640px;
+    grid-template: 
+    "column1 column2" 1fr
+    / 40% 60%
+  }
+
+/*Row 2*/
+.row2 {
+  grid-area: row2;
+}
+.row2 .header1 {
+  font-size: 18px;
+}
+.row2 .subText1 {
+  font-size: 8px;
+  line-height: 10px;
+}
+/*Row 3*/
+.row3 {
+  grid-area: row3;
+  margin-right: 30%;
+}
+.row3 .header2 {
+  grid-area: row3;
+  font-size: 18px;
+}
+.row3 .subText2 {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+    /*Make-2*/
+    .makes-2 {
+      width: 94%;
+      height: 165px;
+    }
+      .viewProjectButton {
+        display: none;
+      }
+
+      
+   /*Make-5*/
+   .makes-5 {
+    width: 97%;
+    height: 700px;
+    margin: auto;
+  }
+  
+    .make-row2 {
+      grid-area: make-row2;
+      align-self: end;
+      padding-bottom: 2%;
+      font-size: 10px;
+      line-height: 11px;
+    
+    }
+    .make-row3 {
+      grid-area: make-row3;
+      padding-top: 2%;
+      font-size: 10px;
+      line-height: 11px;
+    
+    
+    }
+    
+    .make-row6 {
+      grid-area: make-row6;
+      font-size: 8px;
+      line-height: 9px;
+    
+    }
+    .make-row7 {
+      grid-area: make-row7;
+    }
+  }
+
+  .grid-container {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 2300px;
+   
+  }
+
+  .coding-1 {
+    height: 300px;
+  }
+  .coding-1 img {
+    transform: translate(20px, 220px);
+  }
+  
+  .coding-4 {
+    display: none;
+  }
+
+
+/*Resized Coding (800px and 600px media queries) sections*/
+.coding-5 {
+  display: grid;
+  width: 100%;
+  height: 450px;
+  background-color: lavender;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
 }
 
-/******media queries******/
-@media (max-width: 800px) {
-  .grid-container, .grid-container2 {
-    display: block;
-    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
-  }
-  .contactImage {
-    display: block;
-    background-size: cover;
-    height:25rem;
-    width:25rem;
-  }
+.coding-5 .button-python2 {
+  width: 150px;
+  height: 50px;
+  display: grid;
+  justify-self: center;
+  font-size: 15px;
+}
+
+.coding-5 .text-python2 {
+  font-size: 20px;
+  display: grid;
+
+}
+
+.coding-5 p {
+  font-size: 50px;
+  display: grid;
+  line-height: 40px;
+}
+
+.coding-6 {
+  display: grid;
+  width: 100%;
+  height: 450px;
+  background-color: lightyellow;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.coding-6 p {
+  font-size: 50px;
+  display: grid;
+  line-height: 36px;
+}
+
+.coding-6 .button-java2 {
+  width: 150px;
+  height: 50px;
+  display: grid;
+  justify-self: center;
+  font-size: 15px;
+}
+
+.coding-6 .text-java2 {
+  font-size: 20px;
+  display: grid;
+}
+
+
 
   #jumbo {
     width: 80%;
@@ -481,25 +1191,139 @@ body {
     font-size: 120px;
   }
 
-  .mHeader-2 {
-    font-size: 100px;
-    transform: translate(20px, 120px);
-
+  .latest-3 {
+    display: block;
+    height:400px;
+    width:500px;
   }
+
+  .latest-4 {
+    display: block;
+    height: 400px;
+    width: 500px;
+  }
+
+  
+  .contact-1 {
+    display: block;
+    width:550px;
+}
+  
+.contactImage {
+    display: none;
 }
 
-@media (max-width: 600px) {
+.contact-1 p {
+  margin-top: 50px;
+}
+.contact-2 img {
+  transform: translate(-50px, 360px);
+}
+ .mHeader-2 {
+    font-size: 100px;
+    transform: translate(20px, 100px);
+  }
 
+}
+
+/****** 600px - media queries******/
+@media (max-width: 600px) {
   .grid-container, .grid-container2 {
     display:block;
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
   }
+
+  .grid-container {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 2200px;
+    border: 2px solid yellow;
+  }
+
+  .grid-container-2 {
+    display: block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+    width: 80%;
+    height: 1650px;
+    border: 2px solid yellow;
+  }
+
+    /*Make-1*/
+    .makes-1 {
+      width: 100%;
+      height: 440px;
+      grid-template: 
+      "column1 column2" 1fr
+      / 40% 60%
+    }
+  
+  /*Row 2*/
+  .row1 {
+    height: 50px;
+  }
+  .row2 {
+    grid-area: row2;
+    border: 4px solid green;
+  }
+  .row2 .header1 {
+    font-size: 16px;
+  }
+  .row2 .subText1 {
+    padding-top: 10px;
+    font-size: 7px;
+    line-height: 8px;
+    padding-bottom: 0px;
+  }
+  /*Row 3*/
+  .row3 {
+    grid-area: row3;
+    border: 4px solid blue;
+    margin-right: 30%;
+  }
+  .row3 .header2 {
+    padding-top: 5px;
+    grid-area: row3;
+    font-size: 18px;
+  }
+  .row3 .subText2 {
+    padding-top: 5px;
+    justify-self: start;
+    font-size: 7px;
+    line-height: 8px;
+    margin-right: 20px;
+  }
+  
+  /*Make-2*/
+  .makes-2 {
+    width: 91%;
+    height: 100px;
+  }
+
+     /*Make-5*/
+     .makes-5 {
+      width: 97%;
+      height: 540px;
+      margin: auto;
+  
+    }
+
+  
+
+  .coding-1 {
+    height: 210px;
+  }
+  .coding-1 img {
+    display: none;
+  }
+
   .contactImage {
     display: block;
     background-size: cover;
     height:20rem;
     width:20rem;
   }
+
 
   #jumbo  {
     width: 100%;
@@ -520,12 +1344,41 @@ body {
     font-size: 110px;
   }
 
-  .mHeader-2 {
+
+  .contact-grid-item {
+    font-family: "Inter", Arial, sans-serif;
+    padding: 40px;
+    margin-top: 100px;
+    }
+
+
+      .contact-1 {
+        display: block;
+        width:370px;
+    }
+      
+      .contactImage {
+        display: none;
+      }
+
+      .contact-1 p {
+        margin-top: 20px;
+      }
+      .contact-2 img {
+        transform: translate(-40px, 200px);
+      }
+
+
+ .mHeader-2 {
     font-size: 70px;
-    transform: translate(20px, 90px);
+    transform: translate(20px, 180px);
+    
   }
 
 }
+
+      
+
 
 
 

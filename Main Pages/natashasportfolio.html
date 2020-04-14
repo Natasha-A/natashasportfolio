@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,10 +10,10 @@
 <body>
   <!--Letterhand Heading-->
   <div class="topHeader">
-    <img src="../HomePage_Images/nLogo.png" alt=""/>
-
-  <!--Side Bar Icon-->
+    <a href="natashasportfolio.html"><img src="../HomePage_Images/nLogo.png" alt=""/></a>
   </div>
+
+    <!--Side Bar Icon-->
   <span style="position: fixed;font-family:Arial, Helvetica, sans-serif; font-size: 30px;margin-left: 30px; color:lightgray" onclick="openNav()">&#9776; </span>
 
   <!--Header-->
@@ -32,12 +31,13 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
+
     </script>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="natashasportfolio.html">Home</a>
     <a href="designsPage.html">Designs</a>
-    <a href="developPage.html">Developments</a>
-    <a href="#">Involvements</a>
+    <a href="developPage.html">Makes</a>
     <a href="#">About</a>
   </div>
 
@@ -47,31 +47,32 @@
       <p class="line-1 anim-typewriter"><strong>Hello There! My name is Natasha Ahammed :)</strong></p>
     </div>
   </section>
-  <h1 class="fade-in">I like to design, tinker, and create new things.</h1>
+  
+  <h1 class="fade-in">I like to design, tinker, and make new things.</h1>
 
   <!--1st Section: Latest-->
   <h1 class="mHeader-1"><strong>Latest.</strong></h1>
   <div class="grid-container">
     <div class="grid-item latest-1">
       <strong><p id="projectTitle">Pocket Plan</p></strong>
-      <p id="subText">Using the skills I developed from my Co-op with Apple, I built my own personal planner iOS app.</p>
-      <!--<img src="../HomePage_Images/pythonIcon.png" alt=""/>
-      <p>Pokemon game created using python and with starter GUI application to learn how to use tkinter in conjunction with the MVC application cycle.-->
-      <button class="buttonOne">Read More</button>
+      <p id="subText">Using the skills I developed from my Co-Op with Apple, I built my own personal planner iOS app.</p>
+
+      <a href="developPage.html" class="buttonOne">Read More</a>
+
     </div>
 
     <div class="grid-item latest-2">
       <p id="projectTitleTwo">Freelance Graphic Design</p>
       <img src="../HomePage_Images/weddingInvitation3.png" alt="Wedding Invitation"/>
       <p id="description">Freelancing graphic design for wedding, creating wedding invitation package.</p>
-      <button class="buttonTwo">Read More</button>
+      <a href="designsPage.html" class="buttonTwo">Read More</a>
     </div>
 
     <div class="grid-item latest-3">
       <p id="projectTitleThree">Python Development</p>
       <img src="../HomePage_Images/pythonIcon.png" alt=""/>
       <p>Pokemon game created using python and with starter GUI application to learn how to use tkinter in conjunction with the MVC application cycle.</p>
-      <button class="buttonThree">Read More</button>
+      <a href="developPage.html" class="buttonThree">Read More</a>    
     </div>
     
     <div class="latest-4">
@@ -97,10 +98,13 @@
     <div class="grid-container-contact">
       <div class="contact-grid-item contact-1">
         <p>Let's get in touch!
-          Hi! I'm someone who likes to work creatively, and logically, putting the two worlds into meaningful projects to the front-eye and deep within.
         </p>
+        <div class="contact-grid-item contact-2">
+          <a href="https://github.com/Natasha-A" hreflang="en" class="button"><img src="../BuildsPage/githubLogo.png"/></a>
+       </div>
       </div>
       <div class="contact-grid-item contactImage"></div>
     </div>
+
 </body>
 </html>

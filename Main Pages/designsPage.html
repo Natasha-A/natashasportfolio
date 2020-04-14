@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natasha's Supa Dupa Upa Quadrupa Website</title>
+  <title>Designs</title>
   <link rel="stylesheet" href="desigsnPage_style.css">
 </head>
 <body>
   <!--Top Header-->
-  <div class="topHeader">
-    <img src="../MainPage_Images/nLogo.png" alt=""/>
-
+    <div class="topHeader">
+    <a href="natashasportfolio.html"><img src="../HomePage_Images/nLogo.png" alt=""/></a>
   </div>
+
   <span style="position: fixed; font-family:Arial, Helvetica, sans-serif; font-size: 30px;margin-left: 30px; color:lightgray" onclick="openNav()">&#9776; </span>
 
   <!--Side Nav Bar-->
@@ -23,19 +23,18 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
-  
-    </script>
+  </script>
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="natashasportfolio.html">Home</a>
     <a href="designsPage.html">Designs</a>
-    <a href="developPage.html">Developments</a>
+    <a href="developPage.html">Makes</a>
     <a href="#">Builds</a>
   </div>
 
-  <!--Page Header-->
-  <div id="pageHeader"><strong><h>GRAPHIC DESIGN</h></strong></div>
+  <!--1st Page Header-->
+  <div id="pageHeader"><strong><h3>GRAPHIC DESIGN</h3></strong></div>
 
  <!--1st Section: Work Projects-->
  <h1 class="mHeader-1"><strong>Work.</strong></h1>
@@ -43,39 +42,55 @@
    <div class="grid-item work-1">
     <div class="emptyBig"></div>
     <strong><p id="projectTitle">Wedding Invitation</p></strong>
-
     <p id="subText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit. Tenetur placeat qui. </p>
    </div>
 
-   <div class="grid-item latest-2">
+   <div class="grid-item work-2">
+    <div class="emptyBig2"></div>
+    <p id="subText2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit. Tenetur placeat qui.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!.</p>
+  </div>
+
+   <div class="grid-item work-3">
+    <div class="emptyBig3"></div>
+    <p id="subText3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit. Tenetur placeat qui.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit.  </p>
    </div>
    
-   <div class="latest-4">
+ </div>
+
+ <!--2st Section: Graphics Projects-->
+ <h1 class="mHeader-1"><strong>Graphics.</strong></h1>
+ <div class="emptyBig3"></div>
+ <div class="grid-container-2">
+   <div class="grid-item-graphics graphics-1">
+    <p id="paragraph1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit. Tenetur placeat qui.dicta fugit!consectetur adipisicing elit. Tenetur placeat qui </p>
+   </div>
+
+   <div class="grid-item-graphics graphics-2">
+    <p id="paragraph2">Lorem ipsum dolor sit, amet consectetur adipisicing elixt. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit. Tenetur placeat qui.dicta fugit!consectetur adipisicing elit. Tenetur placeat qui </p>
+   </div>
+
+   <div class="grid-item-graphics graphics-3">
+    <strong><div class="title3">Yearbook Pages</div></strong>
+    <p id="paragraph3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat qui maxime quasi unde voluptate expedita rem delectus dicta fugit!consectetur adipisicing elit. Tenetur placeat qui.dicta fugit!consectetur adipisicing elit. Tenetur placeat qui </p>
+   </div>
+
+   <div class="grid-item-graphics graphics-4">
+   <strong><p id="paragraph4">Business Card</p></strong> 
    </div>
  </div>
 
- <!--2rd Section: About Me-->
- 
-
-   <!--3rd Section: Contact-->
-   <strong><h1 class="mHeader-2"><strong>Let's chat.</strong></h1></strong> 
-   <div class="grid-container-contact">
-     <div class="contact-grid-item contact-1">
-       <p>Let's get in touch!
-         Hi! I'm someone who likes to work creatively, and logically, putting the two worlds into meaningful projects to the front-eye and deep within.
-       </p>
+     <!--3rd Section: Contact-->
+     <strong><h1 class="mHeader-2"><strong>Let's chat.</strong></h1></strong>
+     <div class="grid-container-contact">
+       <div class="contact-grid-item contact-1">
+         <p>Let's get in touch!
+         </p>
+         <div class="contact-grid-item contact-2">
+           <a href="https://github.com/Natasha-A" hreflang="en" class="button"><img src="../BuildsPage/githubLogo.png"/></a>
+        </div>
+       </div>
+       <div class="contact-grid-item contactImage"></div>
      </div>
-     <div class="contact-grid-item contactImage"></div>
-   </div>
-   <fieldset>
-     <p>The company Pomodoro Paper works with this website! Get a $5 Notepad!</p>
-     <label>Color:</label>
-     <input type="color"><br>
-     <label>Date and Time:</label>
-     <label>Current Time:</label><input type="datetime-local"><br>
-     <label>Selected Time:</label>
-     <input type="date"><br>
-     <input type="time"><br>
-   </fieldset>
+     
 </body>
 </html>
