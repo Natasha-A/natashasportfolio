@@ -269,7 +269,7 @@ body {
 .latest-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("../HomePage_Images/appsr2.png");
+  background-image: url("appsr2.png");
   background-size: cover;
   font-size: 50px;
   text-align: start;
@@ -683,7 +683,7 @@ a:active {
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("HomePage_Images/face3.png");
+  background-image: url("face3.png");
   background-size: cover;
 }
 
