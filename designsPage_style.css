@@ -151,7 +151,7 @@ body {
 .work-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("../DesignsPage/wInviteFlatlay.png");
+  background-image: url("wInviteFlatlay.png");
   background-size: cover;
   font-size: 50px;
   text-align: start;
@@ -189,7 +189,7 @@ body {
 .work-2 {
   grid-area: projectFour;
   background-color: #FFD9CF;
-  background-image: url("../DesignsPage/ppFlatlayV1.png");
+  background-image: url("ppFlatlayV1.png");
   background-size: cover;
   justify-items: center; /*align items is what allows elements within grid cell to align*/
   display: grid;
@@ -228,7 +228,7 @@ body {
   font-size: 50px;
   color: white;
   font-family: "Nunito", Helvetica, sans-serif;
-  background-image: url("../DesignsPage/bakeryFlatlayV1.png");
+  background-image: url("bakeryFlatlayV1.png");
   grid-template: 
   ". empty3" 12%
   ". subText3" 4%
@@ -276,7 +276,7 @@ body {
 .graphics-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("../DesignsPage/shirtsFlatlayV2.png");
+  background-image: url("shirtsFlatlayV2.png");
   background-size: cover;
   font-size: 50px;
   text-align: start;
@@ -303,7 +303,7 @@ body {
 .graphics-2 {
   grid-area: projectTwo;
   background-color: #FFD9CF;
-  background-image: url("../DesignsPage/torontoFlatlay-R3.png");
+  background-image: url("torontoFlatlay-R3.png");
   background-size: cover;
   justify-items: center; /*align items is what allows elements within grid cell to align*/
   display: grid;
@@ -337,7 +337,7 @@ body {
   font-size: 53px;
   text-align: start;
   font-family: "Inter", Helvetica, sans-serif;
-  background-image: url("../DesignsPage/yearbookFlatlayV2.png");
+  background-image: url("yearbookFlatlayV2.png");
   padding: 30px;
   grid-template:
     "title3" 70px
@@ -370,7 +370,7 @@ body {
   text-align: start;
   color: white;
   font-family: "Inter", Helvetica, sans-serif;
-  background-image: url("../DesignsPage/businessCardFlatlayV1.png");
+  background-image: url("businessCardFlatlayV1.png");
   grid-template:
     "paragraph4" 200px
     / 35% 50%
@@ -469,7 +469,7 @@ a:active {
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../HomePage_Images/face3.png");
+  background-image: url("face3.png");
   background-size: cover;
 }
 
@@ -489,7 +489,7 @@ a:active {
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../HomePage_Images/face3.png");
+  background-image: url("face3.png");
   background-size: cover;
 
 }

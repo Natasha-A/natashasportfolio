@@ -219,7 +219,7 @@ body {
 .coding-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("../BuildsPage/appsFlatlayR3.png");
+  background-image: url("appsFlatlayR3.png");
   background-size: cover;
   font-size: 50px;
   color: white;
@@ -290,7 +290,7 @@ body {
   align-items: center;
   color: black;
   font-family: "Nunito", Helvetica, sans-serif;
-  background-image: url("../BuildsPage/pyJava-V2.png");
+  background-image: url("pyJava-V2.png");
   
   grid-template: 
     "python java" 1fr
@@ -398,7 +398,7 @@ body {
 .makes-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("../BuildsPage/projectsOneFlatlay-V2.png");
+  background-image: url("projectsOneFlatlay-V2.png");
   background-size: cover;
   font-size: 30px;
   text-align: start;
@@ -459,7 +459,7 @@ body {
 
 .makes-2 {
   grid-area: projectTwo;
-  background-image: url("../BuildsPage/projectsTwoFlatlay-V2.png");
+  background-image: url("projectsTwoFlatlay-V2.png");
   background-size: cover;
   display: grid;
   font-size: 20px;
@@ -484,7 +484,7 @@ body {
   align-items: center;
   color: black;
   font-family: "Nunito", Helvetica, sans-serif;
-  background-image: url("../BuildsPage/bike.jpg");
+  background-image: url("bike.jpg");
   margin: 20px;
   background-color: lightyellow;
 
@@ -613,7 +613,7 @@ body {
 .involvementImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../BuildsPage/speaker.png");
+  background-image: url("speaker.png");
   background-size: cover;
 }
 
@@ -669,7 +669,7 @@ body {
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../HomePage_Images/face3.png");
+  background-image: url("face3.png");
   background-size: cover;
 }
 
@@ -734,7 +734,7 @@ a:active {
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../HomePage_Images/face3.png");
+  background-image: url("face3.png");
   background-size: cover;
 }
 
