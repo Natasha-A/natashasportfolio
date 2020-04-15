@@ -1,0 +1,957 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+
+/* Global */
+html{
+  min-height: 100%;
+  min-width: 100%;
+  overflow: scroll;
+}
+
+.topHeader {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.topHeader img {
+  height: 30px;
+  width: 30px;
+}
+
+body {
+  font-family: "Anonymous Pro", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 1.6em; /*line space between each line*/
+  /*(1em is 16px, 0.5em is 8 px)*/
+  margin: 0; /*changes from default margin to have no margin*/
+  height: 900px;
+}
+
+.container {
+  width: 80%;
+  margin-top: 30px;
+}
+
+/***Main Header***/
+#mainHeader h1 {
+  color: black;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  }
+
+ /***Nav Bar***/ 
+#mainNav {
+  /*background: #ccc;*/
+  color: black;
+  position: -webkit-sticky; /*Stays in position!*/
+  position: sticky;
+  top: 0;
+}
+#mainNav ul {
+  padding: 0;
+  margin: 10;
+  list-style: none; 
+  
+
+}
+
+#mainNav li {
+  display: inline;
+  padding: 5px 10px;
+  /*text-align: center;*/
+ 
+
+}
+
+#mainNav a { /*specifically for anchor link*/
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#mainNav li:hover { /*specify hover state of list object*/
+  background: lightgray; 
+}
+
+/***Jumbo***/
+#jumbo {
+  display: flex;
+  min-height: 250px; /*min pixels*/
+  align-items: center center;
+  background-color: white;
+}
+
+#jumbo h1 {
+  color: black;
+  font-size: 40px;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+/*Side Nav Bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffcccc;
+  transition: 0.5s;
+  padding-top: 60px; 
+  font-family: "Inter", Helvetica, sans-serif;
+  line-height: 25px; /*line space between each line*/
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: white;
+  line-height: 25px; /*line space between each line*/
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  line-height: 25px; /*line space between each line*/
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  line-height: 25px; /*line space between each line*/
+  
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Animated Header*/
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: black;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;  
+    margin: 0 auto;
+    border-right: 2px solid black;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;    
+    transform: translateY(-50%);    
+    margin-bottom: 40px;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: black;}
+  to{border-right-color: transparent;}
+}
+
+/*Sub heading animation*/
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 2.5s;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  font-size: 24px;
+  color: #89B4FF;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.anim-typewriter {
+  font-size: 39px;
+}
+/*Latest header*/
+.mHeader-1 {
+  font-family: "Inter", Helvetica, sans-serif;
+  margin-left: 10%;
+  transform: translate(20px, 120px);
+  font-size: 150px;
+}
+
+/******LATEST Grid Container******/
+.grid-container {
+  display: grid;
+  width: 80%; /*Makes 80% width of screen*/
+  margin: auto; /*takes left over % (20) and centers left and right*/
+  height: 1800px;
+  padding-top: 30px;
+  font-family: "Inter", Helvetica, sans-serif;
+
+  /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
+  /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
+  margin-bottom: 50px;
+  grid-template:
+  "projectOne projectOne" 1fr
+  "projectTwo projectThree" 1fr
+  "projectFour projectFour" 1fr
+  / 1fr 1fr  /*columns respective to above rows, with their row attributes*/
+}
+
+.grid-item {
+  display: grid;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #ffcccc;
+  padding: 40px;
+  grid-template: 
+  "iconImage" 50%
+  "textBox" 50%
+  / minmax(240px, 1fr);
+
+  }
+
+.latest-1 {
+  display: grid;
+  grid-area: projectOne;
+  background-image: url("../HomePage_Images/appsr2.png");
+  background-size: cover;
+  font-size: 50px;
+  text-align: start;
+  color: white;
+  font-family: "Nunito", Helvetica, sans-serif;
+  padding-left: 3%;  
+  grid-template: 
+  "projectTitle projectTitle" 20%
+  "subText ." 20%
+  "button ." 30%  
+  / 40% 60% 
+}
+
+#projectTitle {
+  grid-area: projectTitle;
+  font-family: "Nunito", Helvetica, sans-serif;
+
+}
+
+.latest-1 #subText {
+  grid-area: subText;
+  position: grid;
+  font-size: 20px;
+  color: #97B7F7;
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+.buttonOne {
+    margin-top: 50px;
+    grid-area: button;
+    background-color: #FE8460;
+    border: none;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  
+.buttonOne:hover {
+    opacity: 1
+}
+  
+.latest-2 {
+  background-color: #CFE4FF;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  align-items: center;
+  display: grid;
+  background-size: cover;
+  font-size: 50px;
+  text-align: start;
+  color: white;
+  font-family: "Nunito", Helvetica, sans-serif;
+  padding-left: 3%; 
+  padding-top: 15%; 
+  grid-template: 
+    "projectTitle" 20%
+    "iconImage" 30%
+    "subText" 20%
+    "button2" 20%
+    / 1fr
+}
+
+.latest-2 #projectTitleTwo {
+  grid-area: projectTitle;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+  line-height: 50px;
+  justify-self: center;
+  align-self: center;
+}
+
+.latest-2 img {
+  padding-top: 10px;
+  grid-area: iconImage;  
+  height: 150px;
+  width:350px;
+  align-self: center;
+
+}
+
+.latest-2 #description {
+  grid-area: subText;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0px 50px;
+  color: white;
+  align-self: start;
+  font-size: 20px;
+}
+
+.buttonTwo {
+  margin-top: 30px;
+  grid-area: button2;
+  background-color: #FE8460;
+  border: none;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  width: 140px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.buttonTwo:hover {
+  opacity: 1
+}
+
+.latest-3 {
+  background-color: #FEECE3;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  align-items: center;
+  display: grid;
+  background-size: cover;
+  font-size: 20px;
+  text-align: start;
+  font-family: "Nunito", Helvetica, sans-serif;
+  padding-left: 3%; 
+  padding-top: 15%; 
+  grid-template:
+    "projectTitleThree" 20%
+    "iconImage2" 30%
+    "subText2" 27%
+    "button2" 25%
+    / 1fr
+}
+
+.latest-3 #projectTitleThree {
+  grid-area: projectTitleThree;
+  text-align: center;
+  margin-top: 2px;
+  color: white;
+  line-height: 50px;
+  justify-self: center;
+  align-self: center;
+  font-size: 60px;
+  color: #2a4ba3;
+}
+
+.latest-3 img {
+  padding-top: 20px;
+  grid-area: iconImage2;
+  background-color: #FEECE3;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.latest-3 p {
+  grid-area: subText2;
+  background-color: #FEECE3;
+  padding: 0px 40px;
+  text-align: center;
+  align-self: center;
+  color: #2a4ba3;
+  font-family: "Nunito", Helvetica, sans-serif;
+
+}
+
+.buttonThree {
+  grid-area: button2;
+  background-color: #FE8460;
+  border: none;
+  color: white;
+  align-self: start;
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  width: 140px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.buttonThree:hover {
+  opacity: 1
+}
+
+.latest-3 {
+  background-size: cover;
+}
+
+.latest-4 {
+  font-family: "Nunito", Helvetica, sans-serif;
+  grid-area: projectFour;
+  background-color: #FFD9CF;
+  background-image: url("../HomePage_Images/VectorFlatLay-V3.png");
+  background-size: cover;
+  justify-items: center; /*align items is what allows elements within grid cell to align*/
+  display: grid;
+  font-size: 20px;
+  text-align: start;
+  align-items: center;
+  color: black;
+  font-family: "Inter", Helvetica, sans-serif;
+  grid-template:
+    "iconImage4" 70%
+    "projectTitle4" 10%
+    "button4" 20%
+    / 1fr
+}
+
+.latest-4 .empty {
+  grid-area: iconImage4;
+  width:100%;
+  height:100%;
+  text-align: center;
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+.latest-4 #projectTitleFour {
+  margin-top: 94px;
+  grid-area: projectTitle4;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  margin-left: 80px;
+  font-family: "Nunito", Helvetica, sans-serif;
+}
+
+.latest-4 .buttonFour {
+  margin-left: 75px;
+  grid-area: button4;
+  background-color: #FE8460;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.buttonFour:hover {
+  opacity: 1
+}
+
+
+
+/****** ABOUT ME Grid Container ******/
+.grid-container-aboutme {
+  display: grid;
+  width: 80%; /*Makes 80% width of screen*/
+  margin: auto; /*takes left over % (20) and centers left and right*/
+  height: 600px;
+  padding-top: 30px;
+  /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
+  /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+
+}
+
+.aboutme-grid-item {
+  display: grid;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #ffcccc;
+  padding: 40px;
+  }
+
+.aboutme-1 {
+  grid-column: 1 / 2;
+  display: grid;
+  background-color: #cacffc;
+}
+
+.mHeader-2 {
+  font-family: "Inter", Helvetica, sans-serif;
+  margin-left: 10%;
+  transform: translate(20px, 120px);
+  font-size: 130px;
+}
+
+.aboutme-1 p {
+  text-align: start;
+  color: white;
+  font-family: "Inter", Helvetica, sans-serif;
+
+}
+
+.aboutmeImage {
+  background-color:lightyellow;
+  grid-column: 2 / 3;
+  background-image: url("../HomePage_Images/medPortraitV3.png");
+  background-size: cover;
+
+}
+
+/****** CONTACT BOX Grid Container ******/
+.grid-container-contact {
+  display: grid;
+  width: 80%; /*Makes 80% width of screen*/
+  margin: auto; /*takes left over % (20) and centers left and right*/
+  height: 600px;
+  padding-top: 30px;
+  margin-bottom: 100px;
+  /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
+  /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.contact-grid-item {
+  display: grid;
+  font-family: "Inter", Arial, sans-serif;
+  padding: 40px;
+  }
+
+.contact-1 {
+  grid-column: 1 / 2;
+  display: grid;
+  background-color: #afcefa;
+}
+
+.mHeader-2 {
+  font-family: "Inter", Helvetica, sans-serif;
+  margin-left: 10%;
+  transform: translate(20px, 120px);
+  font-size: 130px;
+
+}
+
+
+#email1 {
+  margin-top: 20px;
+  text-align: start;
+  color: white;
+  font-size: 55px;
+  align-self: center;
+  font-family: "Inter", Helvetica, sans-serif;
+  margin-bottom: 2px;
+}
+
+#bar {
+  color: white;
+  font-size: 60px;
+}
+
+#email2 {
+  margin-top: 20px;
+  text-align: start;
+  color: white;
+  font-size: 55px;
+  font-family: "Inter", Helvetica, sans-serif;
+}
+#emailInfo {
+  color: white;
+}
+
+.emailLink {
+  text-decoration: none;
+}
+
+u {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.contact-2 img {
+  width:40px;
+  height: 40px;
+  align-self: end;
+  padding: 0px;
+  margin: 0px;
+  transform: translate(-40px, 70px);
+}
+
+.contactImage {
+  background-color:lightyellow;
+  grid-column: 2 / 3;
+  background-image: url("../HomePage_Images/face3.png");
+  background-size: cover;
+}
+
+
+/******media queries******/
+
+@media (max-width: 800px) {
+  /*Header*/
+  #jumbo {
+    width: 80%;
+    text-align: center;
+    font-size: 11px;
+    margin-left: 20px;
+  }
+
+  .fade-in {
+    width: 100%;
+    float: none;
+    font-size: 21px;
+    margin-top: 2px;
+  }
+
+  .mHeader-1 {
+    font-size: 120px;
+  }
+
+  .mHeader-2 {
+    font-size: 100px;
+    transform: translate(20px, 200px);
+
+  }
+
+  .mHeader-3 {
+    font-size: 100px;
+    transform: translate(20px, 100px);
+
+  }
+
+  /*GRID CONTAINER*/
+    .grid-container, .grid-container2 .grid-container3 {
+      display: block;
+      float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+  }
+
+  /*Latest-1*/
+  .latest-1 #subText {
+    display: none;  
+  }
+
+
+  .latest-1 #projectTitle {
+    line-height: 0.9em;
+  }
+  .latest-1 .buttonOne {
+    margin-top: 50px;
+    height: 30px;
+    width: 140px;
+  }
+
+  /*Latest 3*/
+  .latest-3 .buttonThree {
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .latest-3 #projectTitle {
+    font-size: 30px;
+  }
+  .latest-3 p {
+    font-size: 15px;
+  }
+  .latest-3 img {
+    display: none;
+  }
+
+  /*Latest 4*/
+  .latest-4 .empty {
+    display: none;
+  }
+
+  .latest-4 .buttonFour {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 35px;
+  }
+
+  /*About Me*/
+  .grid-container3 {
+    position: relative;
+    display: block;
+    margin: auto; /*takes left over % (20) and centers left and right*/
+    height: 600px;
+    padding-top: 30px;
+    margin-bottom: 250px;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+
+  .aboutmeImage {
+    display: none;
+  }
+
+  .aboutme-grid-item {
+    margin-top:100px;
+    display: block;
+    width: 26em;
+  }
+
+  .contact-1 {
+      display: block;
+      width:550px;
+  }
+
+  .mHeader-2 {
+    transform: translate(5px,100px);
+  }
+    
+  .contactImage {
+      display: none;
+  }
+
+  .contact-1 p {
+    margin-top: 120px;
+  }
+  .contact-2 img {
+    transform: translate(-50px, 270px);
+  }
+
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  /*Header*/
+  .grid-container, .grid-container2 .grid-container3{
+    display:block;
+    float: none; /*Remove and add elements as needed once web page becomes smaller!*/
+  }
+
+  #jumbo  {
+    width: 100%;
+    float: none;
+    font-size: 10px;
+    margin-left: 30px;
+  }
+
+  .fade-in {
+    width: 100%;
+    float: none;
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+  .mHeader-1 {
+    font-size: 110px;
+  }
+
+  .mHeader-2 {
+    font-size: 70px;
+    transform: translate(20px, 90px);
+  }
+
+  /*Latest-2*/
+  .latest-2 #description {
+    font-size: 18px;
+  }
+ 
+  /*Latest-3*/
+  .latest-3 p  {
+    margin-top: -40px;
+    font-size: 15px;
+    
+  }
+  .latest-3 .buttonThree {
+    height: 25px;
+    width: 100px;
+  }
+
+   /*Latest-3*/
+   .latest-3 #projectTitleThree {
+    font-size: 30px;
+  }
+
+  .latest-4 .empty {
+    display: none;
+  }
+
+  .latest-4 #projectTitleFour {
+    justify-self: center;
+    align-self: center;
+    transform: translate(-30px,0px);
+  }
+
+  .latest-4 .buttonFour {
+    justify-self: center;
+    align-self: center;
+    transform: translate(-30px,-20px);
+  }
+
+  .contactImage {
+    display: block;
+    background-size: cover;
+    height:20rem;
+    width:20rem;
+  }
+  .mHeader-2 {
+    font-size: 70px;
+    transform: translate(20px, 200px);
+  }
+
+  .aboutme-grid-item {
+    margin-top:100px;
+    display: block;
+    width: 15em;
+    }
+
+    .contact-grid-item {
+      font-family: "Inter", Arial, sans-serif;
+      padding: 40px;
+      margin-top: 100px;
+      }
+
+      .contact-grid-item .contactImage {
+        font-family: "Inter", Arial, sans-serif;
+        padding: 40px;
+        display: none;
+        }
+
+        .contact-1 {
+          display: block;
+          width:320px;
+      }
+        
+        .contactImage {
+          display: none;
+        }
+
+        .contact-1 p {
+          margin-top: 20px;
+        }
+        .contact-2 img {
+          transform: translate(-40px, 200px);
+        }
+
+        #email1 {
+          font-size: 40px;
+        }
+        #email2 {
+          font-size: 40px;
+        }
+
+      
+
+
+   .mHeader-2 {
+      font-size: 70px;
+      transform: translate(20px, 180px);
+      
+    }
+      
+}
+
+
+
+
+
+
+
+

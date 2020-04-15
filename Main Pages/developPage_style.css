@@ -188,43 +188,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: black;}
-  to{border-right-color: transparent;}
-}
-
-/*Sub heading animation*/
-.fade-in {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-  animation-duration: 2.5s;
-  font-family: Helvetica, Arial, sans-serif;
-  margin-left: 10%;
-  margin-bottom: 20%;
-  font-size: 24px;
-  color: #89B4FF;
-}
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 /*Latest header*/
 .mHeader-1 {
   font-family: "Inter", Helvetica, sans-serif;
@@ -260,7 +223,7 @@ body {
   background-size: cover;
   font-size: 50px;
   color: white;
-  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 
 }
 
@@ -289,7 +252,7 @@ body {
   position: grid;
   font-size: 15px;
   color: white;
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: "Nunito", Helvetica, sans-serif;
   line-height: 20px;
 
 }
@@ -336,18 +299,18 @@ body {
 
 .python {
   grid-area: python;
-  border: 2px solid red;
   margin: 30px;
   height: 90%;
   align-items: center;
 }
 .text-python {
   align-self: end;
+  
 }
 .button-python {
   margin-top: 65%;
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 60px;
   align-self: end;
   justify-self: center;
   text-align: center;
@@ -371,7 +334,6 @@ body {
 
 .java {
   grid-area: java;
-  border: 2px solid green;
   margin: 10px;
   text-align: center;
   align-self: start;
@@ -379,15 +341,15 @@ body {
 }
 
 .java p {
-  font-size: 66px;
+  font-size: 70px;
   line-height: 55px;
   margin-top: 10%;
 
 }
 .button-java {
   margin-bottom: 90px;
-  width: 150px;
-  height: 55px;
+  width: 170px;
+  height: 7px;
   align-self: center;
   justify-self: center;
   text-align: center;
@@ -403,8 +365,8 @@ body {
   text-decoration: none;
   cursor: pointer;
   border-radius: 2px;
-  width: 120px;
-  height: 40px;
+  width: 165px;
+  height: 55px;
 }
 
 .buttonCoding:hover {
@@ -441,7 +403,7 @@ body {
   font-size: 30px;
   text-align: start;
   color: black;
-  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   justify-content: center;
   align-content: center;
   grid-template: 
@@ -451,7 +413,6 @@ body {
 
 .column1 {
   grid-area: column1;
-  border: 4px solid red;
   grid-template:
   "row1" 1fr
   "row2" 1fr
@@ -462,13 +423,11 @@ body {
 /*Row 1*/
 .row1 {
   grid-area: row1;
-  border: 4px solid yellow;
 }
 /*Row 2*/
 .row2 {
   padding-top: 10%;
   grid-area: row2;
-  border: 4px solid green;
 }
 .row2 .header1 {
   font-size: 37px;
@@ -481,7 +440,6 @@ body {
 /*Row 3*/
 .row3 {
   grid-area: row3;
-  border: 4px solid blue;
   margin-right: 40%;
 }
 .row3 .header2 {
@@ -496,7 +454,6 @@ body {
 
 .column2 {
   grid-area: column2;
-  border: 4px solid blue;
 }
 
 
@@ -512,7 +469,7 @@ body {
 }
 
 .viewProjectButton {
-    transform: translate(0px, 310px);
+    transform: translate(0px, 280px);
     font-size: 10px;
   
 }
@@ -550,8 +507,7 @@ body {
   background-size: cover;
   line-height: 22px;
   font-size: 20px;
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-  border: 3px solid red;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   grid-template: 
   "column1 column2" 1fr
   / 1fr 1fr
@@ -559,7 +515,6 @@ body {
 
 .makeColumn-1 {
   grid-area: column1;
-  border: 3px solid green;
   grid-template:
     "make-row1" 30%
     "make-row2" 15%
@@ -570,31 +525,26 @@ body {
 
 .make-row1 {
   grid-area: make-row1;
-  border: 2px solid green;
 }
 .make-row2 {
   grid-area: make-row2;
-  border: 2px solid yellow;
   align-self: end;
   padding-bottom: 2%;
 
 }
 .make-row3 {
   grid-area: make-row3;
-  border: 2px solid blue;
   padding-top: 2%;
 
 
 }
  .make-row4 {
   grid-area: make-row4;
-  border: 2px solid red;
 
 }
 
 .makeColumn-2 {
   grid-area: column2;
-  border: 3px solid blue;
   grid-template:
   "make-row5" 25.5%
   "make-row6" 17%
@@ -602,17 +552,71 @@ body {
 }
 .make-row5 {
   grid-area: make-row5;
-  border: 2px solid green;
 }
 .make-row6 {
   grid-area: make-row6;
-  border: 2px solid yellow;
 
 }
 .make-row7 {
   grid-area: make-row7;
-  border: 2px solid blue;
 }
+/******INVOLVEMENTS Grid Container******/
+.grid-container-involvements {
+  display: grid;
+  width: 80%; /*Makes 80% width of screen*/
+  margin: auto; /*takes left over % (20) and centers left and right*/
+  height: 600px;
+  padding-top: 30px;
+  margin-bottom: 100px;
+  /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
+  /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+
+}
+
+.involvements-grid-item {
+  display: grid;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  padding: 40px;
+  }
+
+.involvements-1 {
+  grid-column: 1 / 2;
+  display: grid;
+  background-color: #cacffc;
+
+}
+
+.mHeader-2 {
+  font-family: "Inter", Helvetica, sans-serif;
+  margin-left: 10%;
+  transform: translate(20px, 120px);
+  font-size: 130px;
+}
+
+.involvements-1 p {
+  text-align: start;
+  color: white;
+}
+
+.involvements-2 img {
+  width:40px;
+  height: 40px;
+  align-self: end;
+  padding: 0px;
+  margin: 0px;
+  transform: translate(-40px, 205px);
+}
+
+.involvementImage {
+  background-color:lightyellow;
+  grid-column: 2 / 3;
+  background-image: url("../BuildsPage/speaker.png");
+  background-size: cover;
+}
+
 
 
 /******CONTACT BOX Grid Container******/
@@ -623,8 +627,6 @@ body {
   height: 600px;
   padding-top: 30px;
   margin-bottom: 100px;
-  /*grid-template-rows: repeat(1, 1fr); /*repeat - that way dont have to repeat writing*/
-  /*grid-template-columns: repeat(1, 1fr); repeat - that way dont have to repeat writing*/
   grid-template-columns: repeat(2, 1fr);
   justify-items: stretch;
   align-items: stretch;
@@ -671,6 +673,72 @@ body {
   background-size: cover;
 }
 
+#email1 {
+  margin-top: 20px;
+  text-align: start;
+  color: white;
+  font-size: 55px;
+  align-self: center;
+  font-family: "Inter", Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+#bar {
+  color: white;
+  font-size: 60px;
+}
+
+#email2 {
+  margin-top: 40px;
+  text-align: start;
+  color: white;
+  font-size: 55px;
+  font-family: "Inter", Helvetica, sans-serif;
+}
+#emailInfo {
+  color: white;
+}
+
+.emailLink {
+  text-decoration: none;
+}
+
+u {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+.contact-1 img {
+  width:40px;
+  height: 40px;
+  align-self: end;
+  padding: 0px;
+  margin: 0px;
+  transform: translate(-40px, 70px);
+}
+
+.contactImage {
+  background-color:lightyellow;
+  grid-column: 2 / 3;
+  background-image: url("../HomePage_Images/face3.png");
+  background-size: cover;
+}
+
+
 /*FULL SCREEN*/
 @media (max-width: 1600px) {
   .coding-5 .button-python2 {
@@ -710,7 +778,6 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 2850px;
-    border: 2px solid red;
   }
 
   /*Coding-1*/
@@ -741,7 +808,6 @@ body {
   /*Coding-4 Text*/
   .python {
     grid-area: python;
-    border: 2px solid red;
     margin: 50px;
     height: 70%;
   }
@@ -757,7 +823,6 @@ body {
   
   .java {
     grid-area: java;
-    border: 2px solid green;
     text-align: center;
     font-size: 15px;
   }
@@ -817,10 +882,11 @@ body {
     margin-top: 40px;
   }
   .viewProjectButton {
-    transform: translate(0px, 240px);
+    transform: translate(0px, 220px);
     font-size: 10px;
   
 }
+
 
    /*Make-3*/
    .makes-3 {
@@ -845,11 +911,9 @@ body {
   
   .make-row1 {
     grid-area: make-row1;
-    border: 2px solid green;
   }
   .make-row2 {
     grid-area: make-row2;
-    border: 2px solid yellow;
     align-self: end;
     padding-bottom: 2%;
     font-size: 15px;
@@ -858,7 +922,6 @@ body {
   }
   .make-row3 {
     grid-area: make-row3;
-    border: 2px solid blue;
     padding-top: 2%;
     font-size: 15px;
     line-height: 19px;
@@ -867,13 +930,11 @@ body {
   }
    .make-row4 {
     grid-area: make-row4;
-    border: 2px solid red;
   
   }
   
   .makeColumn-2 {
     grid-area: column2;
-    border: 3px solid blue;
     grid-template:
     "make-row5" 25.5%
     "make-row6" 17%
@@ -881,18 +942,15 @@ body {
   }
   .make-row5 {
     grid-area: make-row5;
-    border: 2px solid green;
   }
   .make-row6 {
     grid-area: make-row6;
-    border: 2px solid yellow;
     font-size: 12px;
     line-height: 14px;
   
   }
   .make-row7 {
     grid-area: make-row7;
-    border: 2px solid blue;
   }
   
 }
@@ -904,7 +962,8 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 1900px;
-    border: 2px solid blue;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+
   }
 
   .grid-container-2 {
@@ -912,7 +971,6 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 2550px;
-    border: 2px solid blue;
   }
 
     /*Make-1*/
@@ -942,7 +1000,6 @@ body {
   /*Row 3*/
   .row3 {
     grid-area: row3;
-    border: 4px solid blue;
     margin-right: 40%;
   }
   .row3 .header2 {
@@ -979,11 +1036,9 @@ body {
 
   .make-row1 {
     grid-area: make-row1;
-    border: 2px solid green;
   }
   .make-row2 {
     grid-area: make-row2;
-    border: 2px solid yellow;
     align-self: end;
     padding-bottom: 2%;
     font-size: 12px;
@@ -992,7 +1047,6 @@ body {
   }
   .make-row3 {
     grid-area: make-row3;
-    border: 2px solid blue;
     padding-top: 2%;
     font-size: 12px;
     line-height: 15px;
@@ -1001,13 +1055,11 @@ body {
   }
    .make-row4 {
     grid-area: make-row4;
-    border: 2px solid red;
   
   }
   
   .makeColumn-2 {
     grid-area: column2;
-    border: 3px solid blue;
     grid-template:
     "make-row5" 25.5%
     "make-row6" 17%
@@ -1015,18 +1067,15 @@ body {
   }
   .make-row5 {
     grid-area: make-row5;
-    border: 2px solid green;
   }
   .make-row6 {
     grid-area: make-row6;
-    border: 2px solid yellow;
     font-size: 12px;
     line-height: 12px;
   
   }
   .make-row7 {
     grid-area: make-row7;
-    border: 2px solid blue;
   }
     
 
@@ -1045,7 +1094,6 @@ body {
    /*Coding-4 Text*/
    .python {
     grid-area: python;
-    border: 2px solid red;
     margin: 30px;
     height: 80%;
   }
@@ -1057,6 +1105,8 @@ body {
   .button-python {
     width: 120px;
     height: 40px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+
   }
   
   .java {
@@ -1074,6 +1124,8 @@ body {
 
   .button-java {
     margin-bottom: 20px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 
   }
 
@@ -1091,7 +1143,6 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 2000px;
-    border: 2px solid green;
   }
 
    /*Make-1*/
@@ -1106,7 +1157,6 @@ body {
 /*Row 2*/
 .row2 {
   grid-area: row2;
-  border: 4px solid green;
 }
 .row2 .header1 {
   font-size: 18px;
@@ -1148,7 +1198,6 @@ body {
 
   .make-row2 {
     grid-area: make-row2;
-    border: 2px solid yellow;
     align-self: end;
     padding-bottom: 2%;
     font-size: 9px;
@@ -1157,7 +1206,6 @@ body {
   }
   .make-row3 {
     grid-area: make-row3;
-    border: 2px solid blue;
     padding-top: 2%;
     font-size: 9px;
     line-height: 12px;
@@ -1166,13 +1214,11 @@ body {
   }
    .make-row4 {
     grid-area: make-row4;
-    border: 2px solid red;
   
   }
   
   .makeColumn-2 {
     grid-area: column2;
-    border: 3px solid blue;
     grid-template:
     "make-row5" 25.5%
     "make-row6" 17%
@@ -1180,18 +1226,15 @@ body {
   }
   .make-row5 {
     grid-area: make-row5;
-    border: 2px solid green;
   }
   .make-row6 {
     grid-area: make-row6;
-    border: 2px solid yellow;
     font-size: 8px;
     line-height: 10px;
   
   }
   .make-row7 {
     grid-area: make-row7;
-    border: 2px solid blue;
   }
 
   .grid-container {
@@ -1199,7 +1242,6 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 2300px;
-    border: 2px solid green;
   }
 
   .coding-1 {
@@ -1213,6 +1255,16 @@ body {
     display: none;
   }
 
+  .involvementImage {
+    display: none;
+  }
+
+  .involvements-grid-item {
+    margin-top:100px;
+    display: block;
+    width: 26em;
+  }
+
 
 /*Resized Coding (800px and 600px media queries) sections*/
 .coding-5 {
@@ -1223,6 +1275,8 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 
 }
 
@@ -1232,11 +1286,15 @@ body {
   display: grid;
   justify-self: center;
   font-size: 15px;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 }
 
 .coding-5 .text-python2 {
   font-size: 20px;
   display: grid;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 
 }
 
@@ -1244,6 +1302,8 @@ body {
   font-size: 50px;
   display: grid;
   line-height: 40px;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 }
 
 .coding-6 {
@@ -1254,6 +1314,8 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 
 }
 
@@ -1269,6 +1331,8 @@ body {
   display: grid;
   justify-self: center;
   font-size: 15px;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+
 }
 
 .coding-6 .text-java2 {
@@ -1330,6 +1394,10 @@ body {
     transform: translate(20px, 100px);
   }
 
+  .involvementImage {
+    display: none;
+  }
+
 }
 
 /****** 600px - media queries******/
@@ -1344,7 +1412,8 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 2200px;
-    border: 2px solid yellow;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+
   }
 
   .grid-container-2 {
@@ -1352,16 +1421,20 @@ body {
     float: none; /*Remove and add elements as needed once web page becomes smaller!*/
     width: 80%;
     height: 1650px;
-    border: 2px solid yellow;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+
   }
 
     /*Make-1*/
     .makes-1 {
       width: 100%;
       height: 440px;
+      font-family: "Nunito", Helvetica, Arial, sans-serif;
+
       grid-template: 
       "column1 column2" 1fr
       / 40% 60%
+      
     }
   
   /*Row 2*/
@@ -1370,7 +1443,6 @@ body {
   }
   .row2 {
     grid-area: row2;
-    border: 4px solid green;
   }
   .row2 .header1 {
     font-size: 16px;
@@ -1384,7 +1456,6 @@ body {
   /*Row 3*/
   .row3 {
     grid-area: row3;
-    border: 4px solid blue;
     margin-right: 30%;
   }
   .row3 .header2 {
@@ -1415,7 +1486,6 @@ body {
     }
     .make-row2 {
       grid-area: make-row2;
-      border: 2px solid yellow;
       align-self: end;
       padding-bottom: 2%;
       font-size: 8px;
@@ -1424,7 +1494,6 @@ body {
     }
     .make-row3 {
       grid-area: make-row3;
-      border: 2px solid blue;
       padding-top: 2%;
       font-size: 8px;
       line-height: 9px;
@@ -1433,13 +1502,11 @@ body {
     }
      .make-row4 {
       grid-area: make-row4;
-      border: 2px solid red;
     
     }
     
     .makeColumn-2 {
       grid-area: column2;
-      border: 3px solid blue;
       grid-template:
       "make-row5" 25.5%
       "make-row6" 17%
@@ -1447,18 +1514,15 @@ body {
     }
     .make-row5 {
       grid-area: make-row5;
-      border: 2px solid green;
     }
     .make-row6 {
       grid-area: make-row6;
-      border: 2px solid yellow;
       font-size: 6px;
       line-height: 7px;
     
     }
     .make-row7 {
       grid-area: make-row7;
-      border: 2px solid blue;
     }
 
   
@@ -1516,6 +1580,7 @@ body {
 
       .contact-1 p {
         margin-top: 20px;
+    
       }
       .contact-2 img {
         transform: translate(-40px, 200px);
@@ -1527,6 +1592,20 @@ body {
     transform: translate(20px, 180px);
     
   }
+
+  #email1 {
+    font-size: 40px;
+  }
+  #email2 {
+    font-size: 40px;
+  }
+
+  .aboutme-grid-item {
+    margin-top:100px;
+    display: block;
+    width: 15em;
+    }
+
 
 }
 
