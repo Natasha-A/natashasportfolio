@@ -484,7 +484,7 @@ body {
   align-items: center;
   color: black;
   font-family: "Nunito", Helvetica, sans-serif;
-  background-image: url("bike.jpg");
+  background-image: url("bike.jpeg");
   margin: 20px;
   background-color: lightyellow;
 
@@ -503,7 +503,7 @@ body {
 .makes-5 {
   display: grid;
   grid-area: projectFive;
-  background-image: url("../BuildsPage/projectsThreeFlatlay-V3.png");
+  background-image: url("projectsThreeFlatlay-V3.png");
   background-size: cover;
   line-height: 22px;
   font-size: 20px;
