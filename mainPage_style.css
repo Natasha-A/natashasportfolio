@@ -473,7 +473,7 @@ body {
   font-family: "Nunito", Helvetica, sans-serif;
   grid-area: projectFour;
   background-color: #FFD9CF;
-  background-image: url("../HomePage_Images/VectorFlatLay-V3.png");
+  background-image: url("VectorFlatLay-V3.png");
   background-size: cover;
   justify-items: center; /*align items is what allows elements within grid cell to align*/
   display: grid;
@@ -581,7 +581,7 @@ body {
 .aboutmeImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../HomePage_Images/medPortraitV3.png");
+  background-image: url("medPortraitV3.png");
   background-size: cover;
 
 }
@@ -683,7 +683,7 @@ a:active {
 .contactImage {
   background-color:lightyellow;
   grid-column: 2 / 3;
-  background-image: url("../HomePage_Images/face3.png");
+  background-image: url("HomePage_Images/face3.png");
   background-size: cover;
 }
 
