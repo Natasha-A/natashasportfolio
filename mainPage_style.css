@@ -743,6 +743,13 @@ a:active {
     width: 140px;
   }
 
+
+  /*Latest-2*/
+  .latest-2 #description {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
   /*Latest 3*/
   .latest-3 .buttonThree {
     align-content: center;
@@ -852,6 +859,7 @@ a:active {
   /*Latest-2*/
   .latest-2 #description {
     font-size: 18px;
+    line-height: 20px;
   }
  
   /*Latest-3*/
@@ -860,10 +868,7 @@ a:active {
     font-size: 15px;
     
   }
-  .latest-3 .buttonThree {
-    height: 25px;
-    width: 100px;
-  }
+ 
 
    /*Latest-3*/
    .latest-3 #projectTitleThree {
