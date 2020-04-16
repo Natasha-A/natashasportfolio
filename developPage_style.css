@@ -219,7 +219,7 @@ body {
 .coding-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("appsFlatlayR3.png");
+  background-image: url("appsFlatlayR3-forWeb.jpg");
   background-size: cover;
   font-size: 50px;
   color: white;
@@ -398,7 +398,7 @@ body {
 .makes-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("projectsOneFlatlay-V2.png");
+  background-image: url("buildsFlatLay-V2-forWeb.jpg");
   background-size: cover;
   font-size: 30px;
   text-align: start;
@@ -459,7 +459,7 @@ body {
 
 .makes-2 {
   grid-area: projectTwo;
-  background-image: url("buildsFlatlayV2-forWeb.jpg");
+  background-image: url("projectsTwoFlatlay-V2.png");
   background-size: cover;
   display: grid;
   font-size: 20px;
