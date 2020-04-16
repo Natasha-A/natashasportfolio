@@ -473,7 +473,7 @@ body {
   font-family: "Nunito", Helvetica, sans-serif;
   grid-area: projectFour;
   background-color: #FFD9CF;
-  background-image: url("VectorFlatLay-V3.png");
+  background-image: url("flatLay-forWeb.gif");
   background-size: cover;
   justify-items: center; /*align items is what allows elements within grid cell to align*/
   display: grid;
