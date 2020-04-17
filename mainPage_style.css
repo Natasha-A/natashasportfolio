@@ -613,7 +613,7 @@ body {
   background-color: #afcefa;
 }
 
-.mHeader-2 {
+.mHeader-3 {
   font-family: "Inter", Helvetica, sans-serif;
   margin-left: 10%;
   transform: translate(20px, 120px);
@@ -899,11 +899,11 @@ a:active {
   }
   .mHeader-2 {
     font-size: 70px;
-    transform: translate(20px, 200px);
+    transform: translate(20px, 40px);
   }
 
   .aboutme-grid-item {
-    margin-top:100px;
+    margin-top:00px;
     display: block;
     width: 15em;
     }
@@ -923,6 +923,7 @@ a:active {
         .contact-1 {
           display: block;
           width:320px;
+          margin-top: 200px;
       }
         
         .contactImage {
@@ -948,7 +949,13 @@ a:active {
 
    .mHeader-2 {
       font-size: 70px;
-      transform: translate(20px, 180px);
+      transform: translate(20px, 90px);
+      
+    }
+
+    .mHeader-3 {
+      font-size: 70px;
+      transform: translate(20px, 284px);
       
     }
       

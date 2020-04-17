@@ -151,7 +151,7 @@ body {
 .work-1 {
   display: grid;
   grid-area: projectOne;
-  background-image: url("weddingFlatlay-forWeb.jpg");
+  background-image: url("weddingInvitationFlatlay-V2-web.jpg");
   background-size: cover;
   font-size: 50px;
   text-align: start;
@@ -244,7 +244,7 @@ body {
   grid-area: subText3;
   position: grid;
   font-size: 20px;
-  color: darkgray;
+  color: white;
   font-family: "Inter", Helvetica, sans-serif;
   line-height: 30px;
   text-align: start;
@@ -345,6 +345,29 @@ body {
       / 1fr
 
 }
+#paragraph2 a {
+  color: gray;
+}
+
+#paragraph2 u {
+  color: gray;
+}
+
+/* visited link */
+#paragraph2 a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+#paragraph2 a:hover {
+  color: gray;
+}
+
+/* selected link */
+#paragraph2 a:active {
+  color: gray;
+}
+
 
 #paragraph3 {
   grid-area: paragraph3;
@@ -443,17 +466,17 @@ u {
 }
 
 /* visited link */
-a:visited {
+.contact-1 a:visited {
   color: white;
 }
 
 /* mouse over link */
-a:hover {
+.contact-1 a:hover {
   color: white;
 }
 
 /* selected link */
-a:active {
+.contact-1 a:active {
   color: white;
 }
 
